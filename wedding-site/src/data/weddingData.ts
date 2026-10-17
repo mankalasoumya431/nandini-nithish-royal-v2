@@ -165,7 +165,8 @@ export const weddingData: WeddingData = {
 
   // Drop a couple photo in public/images/ and set e.g. 'images/couple.jpg'.
   // Until then the hero shows an elegant lettered frame.
-  heroPhotoUrl: 'images/couple1.jpeg',
+  heroPhotoUrl: 'images/WA_1792208739977.jpg'
+
 };
 
 export default weddingData;

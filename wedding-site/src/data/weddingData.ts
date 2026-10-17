@@ -88,7 +88,7 @@ export const weddingData: WeddingData = {
         'A traditional ceremony celebrating the bride-to-be with family, blessings and cherished customs.',
       audience: 'All invited guests',
       date: '2026-10-29',
-      startTime: '14:00',
+      startTime: '13:00',
       displayDate: '29th October 2026 · Thursday',
       displayTime: 'After 2:00 PM',
       location: 'At home · Meerpet, Hyderabad',

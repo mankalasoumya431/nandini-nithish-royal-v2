@@ -1,0 +1,32 @@
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  max-width: 320px;
+  margin: var(--space-xs) auto;
+  padding: 0 var(--frame-inset);
+}
+
+.divider__line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-gold-line);
+  opacity: 0.7;
+}
+
+.divider__glyph {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.divider__stroke {
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 1.2;
+}
+
+.divider__dot {
+  fill: var(--color-accent);
+  stroke: none;
+}

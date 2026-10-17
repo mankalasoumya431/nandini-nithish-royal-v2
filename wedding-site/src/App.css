@@ -1,0 +1,131 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.app__frame {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* A slim double-rule border framing the whole invitation, like the deckled
+   edge of a printed card. Fixed so it stays put while the content scrolls. */
+.app__frame-border {
+  position: fixed;
+  inset: var(--frame-inset);
+  border: 1px solid var(--color-gold-line);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.app__frame-border::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid var(--color-gold-line);
+  opacity: 0.55;
+}
+
+/* A small flourish at each corner of the outer frame, echoing the printed
+   corner motifs on physical cards without competing with the typography. */
+.app__frame-corner {
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.app__frame-corner::before,
+.app__frame-corner::after {
+  content: '';
+  position: absolute;
+  background: var(--color-gold);
+}
+
+.app__frame-corner::before {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+}
+
+.app__frame-corner--tl {
+  top: var(--frame-inset);
+  left: var(--frame-inset);
+}
+.app__frame-corner--tl::before {
+  top: 4px;
+  left: 4px;
+}
+.app__frame-corner--tl::after {
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 1px;
+  transform-origin: left center;
+  transform: rotate(45deg);
+}
+
+.app__frame-corner--tr {
+  top: var(--frame-inset);
+  right: var(--frame-inset);
+}
+.app__frame-corner--tr::before {
+  top: 4px;
+  right: 4px;
+}
+.app__frame-corner--tr::after {
+  top: 4px;
+  right: 4px;
+  width: 16px;
+  height: 1px;
+  transform-origin: right center;
+  transform: rotate(-45deg);
+}
+
+.app__frame-corner--bl {
+  bottom: var(--frame-inset);
+  left: var(--frame-inset);
+}
+.app__frame-corner--bl::before {
+  bottom: 4px;
+  left: 4px;
+}
+.app__frame-corner--bl::after {
+  bottom: 4px;
+  left: 4px;
+  width: 16px;
+  height: 1px;
+  transform-origin: left center;
+  transform: rotate(-45deg);
+}
+
+.app__frame-corner--br {
+  bottom: var(--frame-inset);
+  right: var(--frame-inset);
+}
+.app__frame-corner--br::before {
+  bottom: 4px;
+  right: 4px;
+}
+.app__frame-corner--br::after {
+  bottom: 4px;
+  right: 4px;
+  width: 16px;
+  height: 1px;
+  transform-origin: right center;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 480px) {
+  .app__frame-corner {
+    display: none;
+  }
+}
+
+.app__content {
+  position: relative;
+  z-index: 2;
+}

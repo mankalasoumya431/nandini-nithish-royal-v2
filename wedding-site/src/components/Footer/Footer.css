@@ -1,0 +1,79 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-md) var(--frame-inset) var(--space-xl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.footer__lotus {
+  position: absolute;
+  bottom: -26px;
+  z-index: 0;
+  opacity: 0.85;
+  pointer-events: none;
+  transform: scaleY(-1);
+}
+
+.footer__lotus--left {
+  left: -24px;
+}
+
+.footer__lotus--right {
+  right: -24px;
+  transform: scaleY(-1) scaleX(-1);
+}
+
+.footer__monogram {
+  position: relative;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.footer__names,
+.footer__hashtag,
+.footer__note {
+  position: relative;
+  z-index: 1;
+}
+
+.footer__names {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--step-h3);
+  color: var(--color-emphasis);
+}
+
+.footer__hashtag {
+  font-family: var(--font-label);
+  font-size: var(--step-caption);
+  letter-spacing: 0.14em;
+  color: var(--color-gold);
+}
+
+.footer__note {
+  font-size: var(--step-caption);
+  color: var(--color-text-soft);
+  font-style: italic;
+  max-width: 34ch;
+}
+.footer__invited-by {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+.footer__hosts {
+  font-family: var(--font-display);
+  color: var(--color-emphasis);
+  text-align: center;
+  margin-top: var(--space-xs);
+}
+.footer__hosts--telugu {
+  font-family: var(--font-telugu);
+  font-size: 0.9em;
+  color: var(--color-text-soft);
+  margin-top: var(--space-2xs);
+}

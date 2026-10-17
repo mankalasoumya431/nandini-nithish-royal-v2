@@ -1,0 +1,63 @@
+:root {
+  /* ---- Color: midnight navy night, deep emerald, burnished gold ---- */
+  --color-base: #0a1428;          /* page background (midnight navy) */
+  --color-base-deep: #13244a;     /* raised glow / gradient partner */
+  --color-surface: #0c2f2d;       /* cards & frames (deep emerald) */
+  --color-text: #f0e7d1;          /* primary text (warm cream) */
+  --color-text-soft: #aeb8cb;     /* secondary text (misty blue-grey) */
+  --color-emphasis: #f0dc9c;      /* headings & filled buttons (pale gold) */
+  --color-accent: #45c4a0;        /* emerald highlight */
+  --color-gold: #c9a74f;
+  --color-gold-bright: #e6c76a;
+  --color-gold-line: #b89a4a;
+  --color-emerald: #1f7a62;       /* decorative foliage */
+  --color-marigold: #e6c76a;
+  --color-petal: #45c4a0;
+  --color-petal-deep: #d4b45a;
+
+  /* ---- Typography ---- */
+  --font-display: 'Playfair Display', 'Noto Serif Telugu', serif;
+  --font-body: 'Lora', 'Noto Serif Telugu', serif;
+  --font-telugu: 'Noto Serif Telugu', serif;
+  --font-label: 'Cinzel', 'Cormorant Garamond', serif;
+
+  /* ---- Type scale ---- */
+  --step-caption: clamp(0.68rem, 0.62rem + 0.3vw, 0.78rem);
+  --step-body: clamp(1rem, 0.95rem + 0.25vw, 1.15rem);
+  --step-lead: clamp(1.15rem, 1.05rem + 0.4vw, 1.4rem);
+  --step-h3: clamp(1.5rem, 1.3rem + 0.8vw, 1.9rem);
+  --step-h2: clamp(2rem, 1.6rem + 1.6vw, 2.9rem);
+  --step-h1: clamp(2.6rem, 1.9rem + 2.8vw, 4.4rem);
+  --step-display: clamp(3.2rem, 2.2rem + 4vw, 5.6rem);
+
+  /* ---- Spacing ---- */
+  --space-2xs: 0.4rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1.25rem;
+  --space-md: 2rem;
+  --space-lg: 3.25rem;
+  --space-xl: 5rem;
+  --space-2xl: 7.5rem;
+
+  /* ---- Layout ---- */
+  --content-max: 640px;
+  --frame-inset: clamp(10px, 3vw, 22px);
+  --radius-soft: 2px;
+
+  /* ---- Motion ---- */
+  --ease-invite: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 0.35s;
+  --dur-med: 0.7s;
+  --dur-slow: 1.4s;
+
+  /* ---- Shadow (used sparingly) ---- */
+  --shadow-card: 0 14px 34px -16px rgba(0, 0, 0, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0.01s;
+    --dur-med: 0.01s;
+    --dur-slow: 0.01s;
+  }
+}

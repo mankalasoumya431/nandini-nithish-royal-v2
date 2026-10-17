@@ -1,0 +1,8 @@
+.monogram__outer { fill: var(--color-base); stroke: var(--color-gold); stroke-width: 2.2; }
+.monogram__inner { fill: var(--color-surface); stroke: var(--color-gold-line); stroke-width: 1; }
+.monogram__facet { stroke: var(--color-accent); stroke-width: 0.8; opacity: 0.55; }
+.monogram__core { fill: var(--color-base); stroke: var(--color-gold); stroke-width: 1; }
+.monogram__stud { fill: var(--color-gold-bright); }
+.monogram__letter { fill: var(--color-emphasis); font-size: 44px; font-weight: 600; }
+.monogram__heart { fill: var(--color-accent); stroke: var(--color-gold-bright); stroke-width: 1; }
+.monogram__rule { stroke: var(--color-gold); stroke-width: 1; opacity: 0.8; }

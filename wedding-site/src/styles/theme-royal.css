@@ -1,0 +1,69 @@
+/* Royal Art-Deco theme layer: patterns, plaques, frames */
+body {
+  background-image:
+    radial-gradient(ellipse 60% 40% at 12% 0%, rgba(31, 122, 98, 0.22), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 88% 0%, rgba(31, 122, 98, 0.22), transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56' fill='none' stroke='%23c9a74f' stroke-opacity='.09'%3E%3Cpath d='M0 28a28 28 0 0 1 56 0M0 28a18 18 0 0 1 36 0M20 28a18 18 0 0 1 36 0M0 56a28 28 0 0 1 56 0'/%3E%3C/svg%3E");
+}
+
+.section__eyebrow::before,
+.section__eyebrow::after {
+  content: '\25C6';
+  font-size: 0.6em;
+  margin: 0 0.9em;
+  color: var(--color-accent);
+  vertical-align: middle;
+}
+
+.section__title {
+  font-family: 'Cinzel', var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: clamp(1.3rem, 4.6vw, 1.9rem);
+  font-weight: 600;
+}
+.section__title-telugu { text-transform: none; letter-spacing: 0; }
+
+.hero__name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  background: linear-gradient(180deg, #f8ebb8 10%, #c9a74f 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero__weds {
+  font-family: 'Cinzel', serif;
+  font-style: normal;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.hero__date-pill,
+.venue__button {
+  background: linear-gradient(135deg, #f3dc92, #c9a74f);
+  color: var(--color-base);
+  border: none;
+  font-weight: 600;
+  padding-inline: 2rem;
+  clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%);
+}
+.hero__date-pill span, .venue__button { color: var(--color-base); }
+
+.event-card,
+.venue__card {
+  background: linear-gradient(160deg, var(--color-surface), #0a2220);
+  padding: var(--space-md);
+  border: 1px solid var(--color-gold-line);
+  box-shadow: var(--shadow-card), inset 0 0 0 5px var(--color-base), inset 0 0 0 6px rgba(201, 167, 79, 0.45);
+  border-radius: 0;
+}
+
+.event-card-row__node {
+  border-radius: 0;
+  transform: rotate(45deg);
+  background: var(--color-gold);
+  border-color: var(--color-gold-bright);
+}

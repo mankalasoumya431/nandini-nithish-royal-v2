@@ -1,0 +1,5 @@
+.events__list {
+  list-style: none;
+  margin: var(--space-xl) 0 0;
+  padding: 0;
+}

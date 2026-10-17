@@ -1,0 +1,133 @@
+.photo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
+  padding: 10px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-gold-line);
+  box-shadow: var(--shadow-card);
+}
+
+.photo-frame__mat {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-base-deep);
+}
+
+/* ---- Arch shape: a rounded temple-gopuram silhouette, flat at the base ---- */
+.photo-frame--arch {
+  border-radius: 50% 50% 6px 6px / 38% 38% 6px 6px;
+  padding-top: 22px;
+}
+
+.photo-frame--arch::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: 50% 50% 4px 4px / 36% 36% 4px 4px;
+  border: 1px solid var(--color-gold-line);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.photo-frame--arch .photo-frame__mat {
+  aspect-ratio: 4 / 5;
+  border-radius: 50% 50% 4px 4px / 42% 42% 4px 4px;
+}
+
+.photo-frame__finial {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 20px;
+}
+
+/* ---- Round shape: kept for a couple portrait in the Hero medallion ---- */
+.photo-frame--round {
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.photo-frame--round::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold-line);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.photo-frame--round .photo-frame__mat {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.photo-frame__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(8%) saturate(102%);
+}
+
+.photo-frame__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 var(--space-xs);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--step-h3);
+  line-height: 1.15;
+  color: var(--color-gold-line);
+}
+
+/* ---- Base corner flourish: a slim L-bracket with a small tip ---- */
+.photo-frame__corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.photo-frame__corner::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-gold);
+}
+
+.photo-frame__corner--bl {
+  bottom: -1px;
+  left: -1px;
+  border-bottom: 1px solid var(--color-gold);
+  border-left: 1px solid var(--color-gold);
+}
+.photo-frame__corner--bl::before {
+  bottom: -2px;
+  left: -2px;
+}
+
+.photo-frame__corner--br {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1px solid var(--color-gold);
+  border-right: 1px solid var(--color-gold);
+}
+.photo-frame__corner--br::before {
+  bottom: -2px;
+  right: -2px;
+}
+
+.photo-frame--round .photo-frame__corner {
+  display: none;
+}

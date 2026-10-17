@@ -1,0 +1,156 @@
+.hero {
+  position: relative;
+  padding-top: var(--space-2xs);
+  padding-bottom: var(--space-xs);
+  overflow: hidden;
+}
+
+.hero__lotus {
+  position: absolute;
+  top: -30px;
+  z-index: 0;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.hero__lotus--left {
+  left: -30px;
+}
+
+.hero__lotus--right {
+  right: -30px;
+}
+
+@media (max-width: 480px) {
+  .hero__lotus {
+    width: 90px;
+    height: 90px;
+    top: -18px;
+  }
+  .hero__lotus--left {
+    left: -18px;
+  }
+  .hero__lotus--right {
+    right: -18px;
+  }
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__monogram {
+  margin-bottom: var(--space-md);
+}
+
+.hero__photo {
+  max-width: 220px;
+  margin-bottom: var(--space-lg);
+}
+
+.hero__sacred {
+  font-family: var(--font-telugu);
+  color: var(--color-accent);
+}
+
+.hero__sacred--telugu {
+  font-size: var(--step-lead);
+  font-weight: 500;
+}
+
+.hero__sacred--translit {
+  font-family: var(--font-label);
+  font-size: var(--step-caption);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+  margin-top: var(--space-2xs);
+}
+
+.hero__rule {
+  max-width: 140px;
+  margin: var(--space-md) 0;
+}
+
+.hero__eyebrow {
+  font-family: var(--font-label);
+  font-size: var(--step-caption);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-sm);
+}
+
+.hero__names {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--step-display);
+  line-height: 1.08;
+  color: var(--color-emphasis);
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+}
+
+.hero__weds {
+  font-style: italic;
+  font-size: 0.32em;
+  color: var(--color-gold);
+  letter-spacing: 0.1em;
+  margin: 0.15em 0;
+}
+
+.hero__names-telugu {
+  font-family: var(--font-telugu);
+  font-size: var(--step-lead);
+  color: var(--color-text-soft);
+  margin-top: var(--space-md);
+}
+
+.hero__message {
+  max-width: 46ch;
+  margin-top: var(--space-lg);
+  font-size: var(--step-lead);
+  font-style: italic;
+  color: var(--color-text-soft);
+  line-height: 1.7;
+}
+
+.hero__date-pill {
+  margin-top: var(--space-lg);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-label);
+  font-size: var(--step-caption);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-emphasis);
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--color-gold-line);
+  border-radius: 999px;
+}
+
+.hero__date-pill-dot {
+  color: var(--color-gold);
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: var(--space-xs);
+  }
+}
+
+.hero__shloka {
+  font-family: var(--font-telugu);
+  font-size: var(--step-caption);
+  line-height: 2;
+  color: var(--color-text-soft);
+  white-space: pre-line;
+  margin-top: var(--space-sm);
+}

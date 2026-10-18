@@ -90,7 +90,7 @@ export const weddingData: WeddingData = {
       date: '2026-10-29',
       startTime: '13:00',
       displayDate: '29th October 2026 · Thursday',
-      displayTime: 'After 2:00 PM',
+      displayTime: 'After 1:00 PM',
       location: 'At home · Meerpet, Hyderabad',
       mapQuery: HOME_ADDRESS,
     },
